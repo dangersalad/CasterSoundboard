@@ -478,13 +478,6 @@ void MainWindow::switchToPrevTab()
 // Board Signa Emissions Handlers
 void MainWindow::hotKeyExecution(QKeyEvent *event)
 {
-    if(event->key() == Qt::Key_Shift){
-        // Toogle Audio Ducking //
-        this->toggleAudioDucking();
-    } else if(event->key() == Qt::Key_Space){
-        // Stop All Sounds //
-        this->stopAllSounds();
-    }
 }
 
 void MainWindow::handleGlobalHotKeyEventFromCurrentWidget(QKeyEvent *event)
